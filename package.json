@@ -2,7 +2,7 @@
 	"name" : "ServerTest",
 	"version" : "0.0.1",
 	"description" : "Testing node and server",
-	"author" : "Jirka Dell'Oro-Friedl'",
+	"author" : "Bastian Weisshaar'",
 	"main" : "ServerTest.js",
 	"scripts" : {
 		"start" : "node ServerTest.js"
