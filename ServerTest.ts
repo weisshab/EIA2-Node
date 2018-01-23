@@ -38,7 +38,7 @@ namespace ServerTest {
         
         
 
-        //  
+        //
         let query: AssocStringString = Url.parse(_request.url, true).query;
         // ?
         for (let key in query)
