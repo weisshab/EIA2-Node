@@ -28,7 +28,7 @@ var ServerTest;
         _response.setHeader("content-type", "text/html; charset=utf-8");
         // Header: ?
         _response.setHeader("Access-Control-Allow-Origin", "*");
-        // ?
+        // 
         let query = Url.parse(_request.url, true).query;
         // ?
         for (let key in query)
