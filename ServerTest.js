@@ -23,7 +23,6 @@ var ServerTest;
     }
     // Request-Event: Verarbeiten der Request und erstellen der Response
     function handleRequest(_request, _response) {
-        console.log("Ich höre Stimmen!!");
         // Header: Antwort kommt im HTML-Format mit uft-8
         _response.setHeader("content-type", "text/html; charset=utf-8");
         // Header: ?
