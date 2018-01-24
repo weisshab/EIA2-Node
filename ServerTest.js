@@ -23,16 +23,23 @@ var ServerTest;
     }
     // Request-Event: Verarbeiten der Request und erstellen der Response
     function handleRequest(_request, _response) {
+        console.log("Ich höre Stimmen!!");
         // Header: Antwort kommt im HTML-Format mit uft-8
         _response.setHeader("content-type", "text/html; charset=utf-8");
         // Header: ?
         _response.setHeader("Access-Control-Allow-Origin", "*");
-        //
+        // Response-Body
+        _response.write("Ich höre Stimmen!!<br>");
+        _response.write("Port: " + port + "<br>");
+        _response.write("Method: " + _request.method + "<br>");
+        _response.write("Url: " + _request.url + "<br>");
+        _response.write("Headers: " + _request.headers + "<br>");
+        // ?
         let query = Url.parse(_request.url, true).query;
         // ?
         for (let key in query)
-            _response.write("<p>" + key + ": " + query[key] + "</p>");
-        // Antwort abschließen und abschicken.
+            console.log(key + ": " + query[key]);
+        // Antwort abschließen und abschicken
         _response.end();
     }
 })(ServerTest || (ServerTest = {}));

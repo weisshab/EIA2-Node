@@ -1,15 +1,16 @@
 {
-	"name" : "ServerTest",
-	"version" : "0.0.1",
-	"description" : "Testing node and server",
-	"author" : "Bastian Weisshaar'",
-	"main" : "ServerTest.js",
-	"scripts" : {
-		"start" : "node ServerTest.js"
+	"name": "DatabaseConnection",
+	"version": "0.0.1",
+	"description": "Testing node, server and database",
+	"author": "Bastian Wiesshaar'",
+	"main": "Server.js",
+	"scripts": {
+		"start": "node Server.js"
 	},
-	"engines" : {
-		"node" : "6.11.1"
+	"engines": {
+		"node": "6.11.1"
 	},
-	"dependencies" : {
+	"dependencies": {
+		"mongodb": "^3.0.1"
 	}
 }
